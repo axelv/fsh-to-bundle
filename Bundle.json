@@ -1,0 +1,32 @@
+{
+  "resourceType": "Bundle",
+  "id": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "PSA",
+        "status": "draft",
+        "permittedDataType": [
+          "Quantity"
+        ],
+        "code": {
+          "text": "Prostate Specific Antigen"
+        },
+        "permittedUnit": [
+          {
+            "code": "ng/mL",
+            "system": "http://unitsofmeasure.org",
+            "display": "ng/mL"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition",
+        "ifNoneExist": "url=http://tiro.health/fhir/ObservationDefinition/psa|1.0.0"
+      }
+    }
+  ]
+}

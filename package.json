@@ -1,0 +1,16 @@
+{
+  "name": "fsh-to-bundle",
+  "version": "1.0.0",
+  "description": "Create FHIR instances using FSH and package them in a batch request Bundle.",
+  "main": "index.js",
+  "author": "Tiro.health",
+  "license": "MIT",
+  "dependencies": {
+    "antlr4": "^4.13.0",
+    "fsh-sushi": "^3.0.0"
+  },
+  "type": "module",
+  "bin": {
+    "fsh-to-bundle": "./index.js"
+  }
+}
